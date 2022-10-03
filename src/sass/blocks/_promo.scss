@@ -1,0 +1,33 @@
+.promo {
+    padding: 145px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        margin-left: 296px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    &__social{
+        display: flex;
+        transform: rotate(90deg);
+        padding-top: 120px;
+        &-link {
+            padding-right: 7px;
+        }
+        &-icon {
+            padding-left: 6px;
+            transform: rotate(270deg);
+        }
+        &-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+    }
+    
+}
