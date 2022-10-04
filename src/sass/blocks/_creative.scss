@@ -1,0 +1,89 @@
+.creative {
+    padding: 100px 0 140px 0;
+    &__img {
+        height: 533px;
+        display: flex;
+        justify-content: space-between;
+        &-left {
+            padding-right: 40px;
+            margin-top: 43px;
+            height: 447px;
+        }
+        &-right {
+            height: 533px;
+        }
+    }
+    &__text {
+        margin: 0 auto;
+        margin-top: 117px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 57px;
+        width: 960px;
+        &-title {
+            width: 385px;
+            text-align: left;
+        }
+        &-descr {
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 145px;
+            width: 430px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        &-btn {
+            margin-top: 30px;
+            width: 163px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+    &__teams {
+        margin-top: 150px;
+        &-subtitle {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &-icons {
+            margin: 40px auto 29px;
+            padding-right: 50px;
+            width: 515px;
+            display: grid;
+            grid-template-columns: 160px 45px 120px;
+            column-gap: 85px;
+            row-gap: 36px;
+            justify-content: center;
+        }
+        &-icon {
+            justify-self: center;
+            align-self: center;
+        }
+        &-view {
+            display: block;
+            text-align: center;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+                color: white;
+            }
+        }
+    }
+}
