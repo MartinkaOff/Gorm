@@ -1,5 +1,8 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/font';
+@import 'libs/slick';
+@import 'libs/slick-theme';
+
 
 @import 'base/variables';
 
@@ -26,4 +29,5 @@ body {
 @import 'blocks/creative';
 @import 'blocks/our_work';
 @import 'blocks/experience';
+@import 'blocks/testimonials';
 

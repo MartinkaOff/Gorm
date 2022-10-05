@@ -1,0 +1,57 @@
+.testimonials {
+    padding: 148px 0 150px 0;
+    &__wrapper {
+        margin-top: 81px;
+    }
+    &__slider {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        img {
+            margin: 0 auto;
+        }
+    }
+    &__descr {
+        margin: 0 auto;
+        margin-top: 29px;
+        width: 572px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 33px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__name {
+        margin-top: 21px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.slick-dots {
+    li {
+        margin: 0 1px;
+        button {
+            background: rgba(255, 255, 255, 0.4);
+            width: 11px;
+            height: 11px;
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .slick-active {
+        button {
+            background: #FFFFFF;
+        }
+    }
+}
+
+.slick-arrow {
+    z-index: -1;
+}
+
