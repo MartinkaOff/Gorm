@@ -7,5 +7,12 @@ $(document).ready(function(){
         dots: true,
         prevArrow: '<a class="slick-prev"></a>',
         nextArrow: '<a class="slick-next"></a>'
-    })
-})
+    });
+});
+
+const percents = document.querySelectorAll('.skills__our-percent'),
+      bar = document.querySelectorAll('.skills__our-bar');
+
+percents.forEach( (item, i) => {
+    bar[i].style.width = item.innerHTML;
+});

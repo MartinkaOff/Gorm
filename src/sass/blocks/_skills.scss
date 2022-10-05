@@ -1,0 +1,46 @@
+.skills {
+    padding: 150px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__our {
+        width: 550px;
+        margin-right: 100px;
+        margin-left: 120px;
+        &-title {
+            display: inline-block;
+            text-align: left;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        &-wrapper {
+            margin-top: 61px;
+        }
+        &-item {
+            margin-top: 20px;
+            width: 495px;
+            display: grid;
+            grid-template-columns: 495px 41px;
+        }
+        &-bar {
+            margin-top: 10px;
+            height: 2px;
+            background: $main-color;
+        }
+        &-percent {
+           display: inline-block;
+        }
+        &-ps {
+            margin-top: 14px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
