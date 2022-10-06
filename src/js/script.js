@@ -8,6 +8,39 @@ $(document).ready(function(){
         prevArrow: '<a class="slick-prev"></a>',
         nextArrow: '<a class="slick-next"></a>'
     });
+
+    function validateForms(form) {
+        $(form).validate( {
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                url: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Enter your name",
+                    minlength: jQuery.validator.format("Enter {0} characters")
+                },
+                email: {
+                    required: "Enter your email",
+                    email: "Email is wrong"
+                },
+                url: {
+                    required: "Enter Website URL"
+                }
+            }
+        });
+    };
+
+    validateForms('#contact-form'); 
 });
 
 const percents = document.querySelectorAll('.skills__our-percent'),
@@ -16,3 +49,4 @@ const percents = document.querySelectorAll('.skills__our-percent'),
 percents.forEach( (item, i) => {
     bar[i].style.width = item.innerHTML;
 });
+
