@@ -1,8 +1,12 @@
 .header {
+    width: 100%;
+    position: fixed;
     padding: 24px;
     height: 86px;
     border-bottom: 1px solid;
     border-color: rgba(255, 255, 255, 0.2);
+    background: black;
+    z-index: 100;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -23,6 +27,7 @@
         }
     }
     &__hamburger {
+        width: 86px;
         padding: 25px;
         top: -1%;
         padding-top: 39px;
@@ -31,9 +36,10 @@
         position: absolute;
         border-right: 1px solid;
         display: block;
-        height: 90px;
+        height: 86px;
         border-left: 1px solid;
         border-color: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
         span {
             display: block;
             height: 2px;

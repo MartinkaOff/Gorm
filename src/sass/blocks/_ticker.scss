@@ -1,0 +1,32 @@
+.ticker {
+    padding: 100px 0 49px 0;
+    &__block {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        height: 169px;
+        background: $main-color;
+    }
+    &__string {
+        width: 216%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        animation: ticker 10s infinite linear;
+        transform: translateX(-100%);
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 70px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    &__div {
+        margin: 0 30px;
+        width: 30px;
+        height: 2px;
+        background: white;
+    }
+}

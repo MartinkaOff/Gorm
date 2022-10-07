@@ -5,6 +5,7 @@
 
 
 @import 'base/variables';
+@import 'base/animation';
 
 body {
     background: black;
@@ -33,4 +34,9 @@ body {
 @import 'blocks/skills';
 @import 'blocks/facts';
 @import 'blocks/contact';
+@import 'blocks/blog';
+@import 'blocks/ticker';
+@import 'blocks/footer';
+@import 'blocks/menu';
+
 

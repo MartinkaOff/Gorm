@@ -1,3 +1,5 @@
+/* const { on } = require("gulp"); */
+
 $(document).ready(function(){
     $('.creative__teams-view').on('click', function() {
         $('.our_work').fadeIn('slow')
@@ -41,6 +43,23 @@ $(document).ready(function(){
     };
 
     validateForms('#contact-form'); 
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('form').trigger('reset');
+        });
+        return false;
+    })
+
+    $('.header__hamburger').on('click', function() {
+        $('.menu').toggleClass('menu_active')
+    });
 });
 
 const percents = document.querySelectorAll('.skills__our-percent'),
